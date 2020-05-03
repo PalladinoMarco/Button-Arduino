@@ -25,12 +25,12 @@
 #ifndef BUTTON_H
     #define BUTTON_H
     #ifndef ARDUINO_H
-        #include <Arduino.h>                                // Import the Arduino library.
+        #include <Arduino.h>                                 // Import the Arduino library.
     #endif
 
-    #define DEFAULT_LONG_PRESSURE 0                         // Default value in milliseconds for the long press.
+    #define DEFAULT_LONG_PRESSURE 0                          // Default value in milliseconds for the long press.
 
-    typedef enum {PULLUP, NO_PULLUP} input_t;               // Symbolic costants to indicate, respectively, if is "INPUT_PULLUP" or "INPUT".
+    typedef enum input:uint8_t {PULLUP, NO_PULLUP} input_t;  // Symbolic costants to indicate, respectively, if is "INPUT_PULLUP" or "INPUT".
 
     /**
      *  Poiter type to a procdeure, that will be assigned to the member data "ptrActionShort" and "ptrActionLong" through the costructor or
